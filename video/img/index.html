@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+html,body,h1{
+    margin: 0;
+    padding: 0;
+
+}
+.video-wrapper{
+width: 100%;
+height: 100vh;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 10;
+}
+.video-wrapper>video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.txt-box{
+border-color: rgba(255,255,255,0.5);
+padding: 200px;
+margin: 100px;
+width: 50%;
+box-sizing: border-box;
+}
+p{
+    font-size: 20px;
+    line-height: 3;
+}
+h1{
+    font-size: 60px;
+    margin-bottom: 100px;
+}
+
+</style>
+</head>
+<body>
+    <div class="video-wrapper">
+    <video src="img/logo.mp4" autoplay muted loop></video>
+    </div>
+    <div class="txt-box"></div>
+</body>
+</html>
